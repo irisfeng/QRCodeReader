@@ -84,6 +84,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
 
         // Do any additional setup after loading the view.
     }
+    
 
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         

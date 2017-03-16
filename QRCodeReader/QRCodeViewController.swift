@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import LeanCloud
 
 class QRCodeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let post = LCObject(className: "TestObject")
+        
+        post.set("words", value: "Hello World!")
+        
+        post.save()
 
         // Do any additional setup after loading the view.
     }
